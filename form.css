@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'norse';
+  src: url('fonts/Norse-Bold.otf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  flex: 4;
+  position: relative;
+  background-image: url('images/forest_background.jpg');
+  background-size: cover;
+}
+.right {
+  flex: 7;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+.logo-wrapper {
+  position: absolute;
+  top: 150px;
+  height: 150px;
+  width: 100%;
+  background-color: black;
+  opacity: 40%;
+}
+.first-div {
+  flex: 4;
+  background-color: rgba(255, 255, 255, 0.795);
+}
+.second-div {
+  flex: 3;
+  background-color: pink;
+}
+.third-div {
+  flex: 3;
+}
