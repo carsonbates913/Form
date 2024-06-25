@@ -9,7 +9,10 @@
   <body>
     <div class="main">
       <div class="left">
-        <div class="logo-wrapper"></div>
+        <div class="logo-wrapper">
+          <img style="height: 90%; opacity: 100%" src="images/odin_logo.png" />
+          <h1 class="logo-text">ODIN</h1>
+        </div>
       </div>
       <div class="right">
         <div class="first-div">
@@ -23,41 +26,58 @@
             You <em>know</em> you want to.
           </h2>
         </div>
-        <div class="second-div">
-          <h2 style="margin-left: 50px">Lets do this!</h2>
-          <form action="" method="get" class="form-main-div">
-            <div class="form-divs">
-              <div class="form-div">
-                <label for="first_name">First Name</label>
-                <input type="text" name="first_name" />
+        <form action="" method="get" class="second-third-div">
+          <div class="second-div">
+            <h2 style="margin-left: 50px">Lets do this!</h2>
+            <div class="form-main-div">
+              <div class="form-divs">
+                <div class="form-div">
+                  <label for="first_name">FIRST NAME</label>
+                  <input type="text" name="first_name" id="first_name" />
+                </div>
+                <div class="form-div">
+                  <label for="email">EMAIL</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div class="form-div">
+                  <label for="password">PASSWORD</label>
+                  <input type="text" name="password" id="password" required />
+                  <div class="error"></div>
+                </div>
               </div>
-              <div class="form-div">
-                <label for="email">Email</label>
-                <input type="text" name="email" />
-              </div>
-              <div class="form-div">
-                <label for="password">Password</label>
-                <input type="text" name="password" />
+              <div class="form-divs">
+                <div class="form-div">
+                  <label for="last_name">LAST NAME</label>
+                  <input type="text" name="last_name" id="last_name" />
+                </div>
+                <div class="form-div">
+                  <label for="phone_number">PHONE NUMBER</label>
+                  <input type="text" name="phone_number" id="phone_number" />
+                </div>
+                <div class="form-div">
+                  <label for="confirm_password">CONFIRM PASSWORD</label>
+                  <input
+                    type="text"
+                    name="confirm_password"
+                    id="confirm_password"
+                    required
+                  />
+                </div>
               </div>
             </div>
-            <div class="form-divs">
-              <div class="form-div">
-                <label for="last_name">Last Name</label>
-                <input type="text" name="last_name" />
-              </div>
-              <div class="form-div">
-                <label for="phone_number">Phone Number</label>
-                <input type="text" name="phone_number" />
-              </div>
-              <div class="form-div">
-                <label for="confirm_password">Confirm Password</label>
-                <input type="text" name="confirm_password" />
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="third-div"></div>
+          </div>
+          <div class="third-div">
+            <button type="submit" class="submit-button">Create Account</button>
+            <p style="margin-left: 50px; margin-top: 20px">
+              Already have an account?
+              <span style="color: rgb(56, 87, 56); font-weight: bold"
+                >Log in</span
+              >
+            </p>
+          </div>
+        </form>
       </div>
     </div>
+    <script src="form.js"></script>
   </body>
 </html>
